@@ -17,3 +17,21 @@ SafeFace Prototype - How to Run
 Requirements:
 - Python 3.x
 - tensorflow, mtcnn, opencv-python, numpy, pandas, pillow, matplotlib, scikit-learn
+
+
+final folder structure:
+SafeFace
+├── code/
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── inference.py
+│   └── README.txt
+├── venv
+|── dataset
+|── dataset_raw
+└── results/
+    ├── best_model.h5
+    ├── final_model.h5
+    ├── metrics.json
+    └── sample_prediction.png
+
