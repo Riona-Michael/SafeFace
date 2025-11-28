@@ -26,20 +26,3 @@ Expect logs and saved files: results/best_model.h5, results/final_model.h5, resu
 python code/inference.py
 Check results/sample_prediction.png.
 
-
-
-final folder structure:
-SafeFace
-├── code/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── inference.py
-│   └── README.txt
-├── venv
-|── dataset
-|── dataset_raw
-└── results/
-    ├── best_model.h5
-    ├── final_model.h5
-    ├── metrics.json
-    └── sample_prediction.png
