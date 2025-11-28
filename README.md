@@ -2,7 +2,7 @@
 AI-powered tool to detect deepfake images by classifying faces as real or fake.
 
 
-0) Environment & install
+0)Environment & install
 python -m venv venv
 venv\Scripts\activate
 pip install --upgrade pip
