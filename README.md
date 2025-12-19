@@ -23,6 +23,6 @@ Expect logs and saved files: results/best_model.h5, results/final_model.h5, resu
 
 
 4)Run:
-python code/inference.py
-Check results/sample_prediction.png.
+python app.py
+upload images and click analyze too see the prediction !
 
