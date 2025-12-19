@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI vs Real Image Detector</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+        .fake { color: red; }
+        .real { color: green; }
+    </style>
+</head>
+
+<body>
+<div class="card">
+    <h2>AI vs Real Image Detector</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+        <h3 class="{{ result.label }}">
+            Prediction: {{ result.label.upper() }}
+        </h3>
+        <p>Confidence: {{ result.prob }}</p>
+
+        <img src="{{ image_path }}">
+    {% endif %}
+</div>
+</body>
+</html>
