@@ -8,7 +8,7 @@ venv\Scripts\activate
 pip install --upgrade pip
 pip install tensorflow mtcnn opencv-python matplotlib numpy pandas scikit-learn pillow
 
-
+![App Screenshot](static/screenshot/before.png)
 1)Run it (from project root):
 python code/preprocess.py
 Check: processed images appear under dataset/processed/real and dataset/processed/fake. If many “Saved:” prints — good.
