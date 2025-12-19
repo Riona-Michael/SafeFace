@@ -9,12 +9,15 @@ pip install --upgrade pip
 pip install tensorflow mtcnn opencv-python matplotlib numpy pandas scikit-learn pillow
 
 
-2)Run it (from project root):
+1)Run it (from project root):
 python code/preprocess.py
 Check: processed images appear under dataset/processed/real and dataset/processed/fake. If many “Saved:” prints — good.
 
+2)create a folder called static in project root
+create another folder inside namee uploads
 
-2)Run training:
+
+3)Run training:
 python code/train.py
 Expect logs and saved files: results/best_model.h5, results/final_model.h5, results/metrics.json.
 
